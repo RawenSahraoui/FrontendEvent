@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import './AdminDashboard.css';
 
 const AdminDashboard = () => {
   const [registrations, setRegistrations] = useState([]);
