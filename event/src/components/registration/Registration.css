@@ -1,0 +1,112 @@
+#batiment img{
+    width: 600px;
+    height: 652px;
+}
+
+.registration-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    height: 655px;
+    border: 2px solid #0b142b;
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    font-family: 'Arial', sans-serif;
+    background-color: #efefef;
+}
+
+.form-containerregistration {
+    background: #ffffff;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    margin: 0;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #0b142b;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.social-icons .icon {
+    margin: 0 10px;
+    color: #0b142b;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons .icon:hover {
+    color: rgba(63, 131, 248, 1);
+}
+
+span {
+    display: block;
+    margin-bottom: 20px;
+    color: #777;
+    text-align: center;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #efefef;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+    background-color: rgba(63, 131, 248, 0.1);
+    border-color: rgba(63, 131, 248, 0.5);
+}
+
+textarea {
+    resize: vertical;
+}
+
+.checkbox-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+#ageCheck{
+    width: 20px;
+}
+.checkbox-container input {
+    margin-right: 10px;
+}
+
+.checkbox-container label {
+    color: #0b142b;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #0b142b;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: rgba(63, 131, 248, 0.5);
+}
+#agecheck{
+    max-width: 50px;
+}

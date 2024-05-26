@@ -1,0 +1,69 @@
+.App {
+    text-align: center;
+    background-color: rgba(63,131,248,.5);
+    padding-bottom: 10%;
+  }
+  .App-header {
+    margin-top: 0;
+    position: relative; 
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: #efefef;
+  }
+  .trait{
+    height: 3px;
+    background-color: #0b142b  ;
+    width: 400px;
+  }
+  .App-header::before {
+    content: ""; 
+    background-image: url('image2.jpg');
+    position: absolute; 
+     width: 100%;
+    height: 100%; 
+    opacity: 0.5;
+    z-index: -1; 
+    margin-top: 0;
+  }
+  .Session {
+    margin-top: 5%;
+    /* margin-bottom:5%; */
+   margin-left: 20%;
+    padding: 20px;
+    border: 3px solid #0b142b ;
+    border-radius: 8px;
+    background-color: #efefef;
+    width: 60%;
+  
+  }
+  .Session:hover{
+    background-color:rgba(63,131,248,.5) ;
+  }
+  .Time {
+    font-weight: bold;
+  }
+  .Description {
+    margin-top: 10px;
+  }
+  .a{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr  ;
+  align-items: center;
+  
+  }
+  .TimeContainer {
+    display: flex; 
+    align-items: center; 
+    margin-left: 40%;
+  
+  }
+  
+  .Clock {
+    width: 35px;
+    height:35px; 
+    margin-right: 8px;
+  }

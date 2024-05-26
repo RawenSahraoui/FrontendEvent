@@ -1,0 +1,23 @@
+#bann{
+    background-color: #0b142b;
+}
+.banner{
+    background-image:url(./DSC_0147.JPG);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 1000px;
+    height: 500px;
+    margin-left: 25%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+.slick-dots{
+    position: absolute;
+    top: 90%;
+    right:1%;
+}
+.slick-dots li button:before{
+    font-size: 20px;
+    justify-content: space-around;
+
+}
