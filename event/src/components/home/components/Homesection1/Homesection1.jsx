@@ -1,6 +1,6 @@
 import './Homesection1.css'
 import './CountDown'
-import i1 from './i1.jpg'
+import i1 from './image0.jpg'
 export default function Homesection1(){
     return(
         <div id='sect1'>
@@ -11,6 +11,7 @@ export default function Homesection1(){
                 <div id='sect121'>
                     <p>Join the Data Science Fusion:</p>
                     <p>competition, workshops, and prizes, defining the forefront of innovation.</p>
+                    <p>1st June ,The Dot</p>
                 </div>   
                 <div classname="timer">
                         <div classname="sub_timer">
