@@ -6,11 +6,12 @@ export default function Contact() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [comment, setComment] = useState('');
+    const [successMessage, setSuccessMessage] = useState('');
 
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const response = await fetch('http://localhost:8000/comments', {
+        const response = await fetch('http://localhost:8000/api/comment', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -19,7 +20,7 @@ export default function Contact() {
         });
 
         if (response.ok) {
-            alert('Message envoyé avec succès !');
+            setSuccessMessage('Commentaire reçu !');
             setName('');
             setEmail('');
             setComment('');
@@ -30,7 +31,13 @@ export default function Contact() {
 
     return (
         <div id="contact">
-            <div className="form-container sign-up">
+            <div id='contact1'>
+                <div id='contact10'>
+                    <h1 id='titre'>Get In Touch</h1><br />
+                    {successMessage && <div className="success-message">{successMessage}</div>}
+                    <p>"Let's connect the dots. Reach out and let's build something incredible !"</p>
+                </div>
+                <div className="form-container sign-up">
                 <form onSubmit={handleSubmit}>
                     <h1>Send Us a Message</h1>
                     <div className="social-icons">
@@ -65,6 +72,9 @@ export default function Contact() {
                     ></textarea>
                     <button type="submit">Submit</button>
                 </form>
+
+                </div>
+                
             </div>
         </div>
     );
