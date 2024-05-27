@@ -39,9 +39,7 @@ export default function Agenda() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className='titre'>Event Schedule</h1>
-        <br />
-        <br />
+        <h1 className='titre'>Event Schedule</h1>   
         <div className='a'>
           <div className='trait'></div>
           <h2>#hack___the___future</h2>
