@@ -1,3 +1,7 @@
+#section2{
+    background-color: #efefef;
+    padding-top: 3%;
+}
 #section21{
     display: flex;
     justify-content: center;
@@ -17,6 +21,7 @@
     color: #0b142b;
     text-align: center;
     font-size: 40px;
+    margin-top: 0;
 }
 #section2 h2{
     color: rgba(63,131,248,.5);
@@ -40,4 +45,7 @@
     width: 50px;
     height: 50px;
 }
-
+.section210:hover{
+    background-color: #eaf2ff;
+    max-width: 400px;
+}
