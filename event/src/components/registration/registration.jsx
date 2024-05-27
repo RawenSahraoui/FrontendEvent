@@ -3,7 +3,7 @@ import './Registration.css';
 import { useState } from 'react';
 import axios from 'axios';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import batiments from './batiments.jpg';
+import batiments from './image30.jpg';
 
 export default function Registration() {
     const [formData, setFormData] = useState({
@@ -14,7 +14,7 @@ export default function Registration() {
         skills: '',
         message: ''
     });
-
+    const [successMessage, setSuccessMessage] = useState('');
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData({
@@ -42,8 +42,18 @@ export default function Registration() {
 
             const data = await response.json();
             console.log('Registration successful', data);
+            setFormData({
+                nomprenom: '',
+                email: '',
+                phone: '',
+                teamname: '',
+                skills: '',
+                message: ''
+            });
+            setSuccessMessage('Registration successful! Thank you for registering.');
         } catch (error) {
             console.error('Error:', error.message);
+            setSuccessMessage('');
         }
     };
     return (
@@ -54,6 +64,7 @@ export default function Registration() {
             <div className="form-containerregistration">
                 <form onSubmit={handleSubmit}>
                     <h1>Registration for InnoHack</h1>
+                    {successMessage && <div className="success-message">{successMessage}</div>}
                     <div className="social-icons">
                         <a href="#" className="icon"><i className="fab fa-google-plus-g"></i></a>
                         <a href="#" className="icon"><i className="fab fa-facebook-f"></i></a>
